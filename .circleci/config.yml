@@ -11,4 +11,5 @@ workflows:
           registry_pass: Solution!1
           registry_user: solution11
           
+          
 description: Prints analysis report of package vulnerabilities using JQ.
