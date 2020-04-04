@@ -1,0 +1,14 @@
+orbs:
+  anchore: anchore/anchore-engine@1.6.5
+version: 2.1
+workflows:
+  scan_image:
+    jobs:
+      - anchore/image_scan:
+          image_name: 'solution11/ubunt_apache2:1.1'
+          private_registry: true
+          registry_name: docker.io
+          registry_pass: Solution!1
+          registry_user: solution11
+          
+description: Prints analysis report of package vulnerabilities using JQ.
